@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html leng="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>清华大学假校园网 Tsinghua University Fake Network</title>
+</head>
+
+<body>  
+  <!-- 橙色三角 -->
+  <div class="triangle_greet"></div> 
+
+  <!-- 灰色三角 -->
+  <div class="corner"></div>
+
+  <!-- 橙色盒子 -->
+  <div class="greet">
+    <h1>:P</h1><br>
+    <h2>欢迎，</h2><br>
+    <h3> Welcome,</h3>
+  </div>
+
+  <!-- 灰色盒子 -->
+  <div class="info">
+      <h1 id="user_name">
+          {{value}}
+          <style>
+          </style>
+      </h1>
+      <p class="info_text" id="Duration">已连接<br>Duration</p>
+      <!-- <p id="Duration">Duration</p> -->
+      <p id="connect_time">
+          {{value}}
+      </p>
+      <p class="info_text" id="Usage"><br>已用流量<br>Usage</p>
+      <div class="container">
+          <div class="used_bar"></div>
+          <div class="tb" id="tb1">
+              <p id="traffic">
+                  {{value}}
+              </p>
+              <br>
+              <p class="traffic_label" id="tl1">50</p>
+          </div>
+          <div class="tb" id="tb2">
+              <p class="traffic_label" id="tl2">75</p>
+          </div>
+          <div class="tb" id="tb3">
+              <p class="traffic_label" id="tl3">100</p>
+          </div>
+          <div class="tb" id="tb4">
+              <p class="traffic_label" id="tl4">125</p>
+          </div>
+          <div class="tb" id="tb45"></div>
+          <div class="tb" id="tb5"></div>
+          <div class="tb" id="tb56"></div>
+          <div class="tb" id="tb6"></div>
+      </div>
+  </div>
+
+  <!-- 断开连接 -->
+  <div class="bar">
+      <button>断开连接
+          <p>Disconnect</p>
+      </button>
+  </div>
+
+  <!-- 跳转 -->
+  <div class="links">
+      <div class="Info">
+          <img src="popup_info.gif" alt="Info" width="20px" >
+          <a href="Info" target="_blank" >Info</a>
+      </div>
+      <div class="Lib">
+          <img src="popup_lib.gif" alt="Lib" width="20px">
+          <a href="Info" target="_blank">Lib</a>
+      </div>
+      <div class="Learn">
+          <img src="popup_learn.gif" alt="Learn" width="20px">
+          <a href="Info" target="_blank">Learn</a>
+      </div>
+      <div class="Mail">
+            <img src="popup_mail.gif" alt="Mail" width="20px">
+            <a href="Mail" target="_blank">Mail</a>
+      </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script>
+      var user_name = new Vue({
+          el: "#user_name",
+          data: {
+              value: "Ace Taffy",
+          }
+      })
+      var traffic = new Vue({
+          el: "#traffic",
+          data: {
+              value: "V.87G",
+          }
+      })
+      var connect_time = new Vue({
+          el: "#connect_time",
+          data: {
+              value: "21:06:23",
+          }
+      })
+  </script>
+
+</body>
+
+</html>

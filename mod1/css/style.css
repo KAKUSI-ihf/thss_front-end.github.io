@@ -1,0 +1,280 @@
+div {
+    position: auto;
+    width: max-content;
+    height: max-content;
+    margin: auto
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+.greet {
+    position: relative;
+    top: 20px;
+    left: 0px;
+    width: 423.5px;
+    height: 165.75px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(230, 78, 30);
+    /* z-index: -1; */
+    color: white;
+}
+
+.greet>h1 {
+    position: absolute;
+    top: -50px;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.greet>h2 {
+    position: relative;
+    top: 20px;
+    left: -10px;
+    font-size: 40px;
+    font-weight: 1;
+}
+
+.greet>h3 {
+    position: relative;
+    top: -50px;
+    left: 0px;
+    font-size: 15px;
+    font-weight: 1;
+}
+
+.triangle_greet {
+    /* z-index: -1; */
+    position: relative;
+    top: 300px;
+    left: -180px;
+    width: 0;
+    height: 0;
+    border-top: 50px solid rgb(230, 78, 30);
+    border-right: 50px solid transparent;
+}
+
+.corner {
+    /* z-index: -1; */
+    position: relative;
+    top: 241px;
+    left: 260px;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid rgb(200, 200, 200);
+    border-right: 30px solid transparent;
+}
+
+.info {
+    position: relative;
+    top: -156px;
+    left: 66px;
+    width: 344.5px;
+    height: 200.5px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(242, 242, 242);
+    box-shadow: 0px 5px 15px #999999;
+}
+
+#user_name {
+    position: relative;
+    top: -15px;
+    left: 0px;
+    color: rgb(230, 78, 30);
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.info_text {
+    position: relative;
+    font-size: 7px;
+    top: -20px;
+    right: 290px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.info_text#Duration {
+    top: -20px;
+}
+
+#connect_time {
+    position: relative;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -80px;
+    left: 70px;
+    color: rgb(236, 100, 117);
+    font-family: 500;
+}
+
+.info_text#Usage {
+    top: -100px;
+}
+
+.container {
+    position: relative;
+    top: -140px;
+    left: 30px;
+    display: flex;
+    border: 2px;
+}
+
+.used_bar {
+    width: 20px;
+    height: 26px;
+    background-color: rgb(245, 188, 44);
+}
+
+.tb {
+    height: 26px;
+
+}
+
+.tb#tb1 {
+    width: 80px;
+
+    background-color: rgb(220, 220, 220);
+}
+
+#traffic {
+    position: relative;
+    top: -18px;
+    font-size: 20px;
+    color: rgb(108, 108, 108);
+    font-weight: 500;
+}
+
+.traffic_label {
+    color: rgb(150, 150, 150);
+    position: relative;
+    font-size: 1px;
+}
+
+.traffic_label#tl1 {
+    color: rgb(150, 150, 150);
+    position: relative;
+    top: -102px;
+    left: 65px;
+    font-size: 1px;
+    font-weight: 400;
+}
+
+.tb#tb2 {
+    width: 45px;
+
+    background-color: rgb(232, 232, 232);
+}
+
+.traffic_label#tl2 {
+    color: rgb(150, 150, 150);
+    position: relative;
+    top: -15px;
+    left: 31px;
+    font-size: 1px;
+}
+
+.tb#tb3 {
+    width: 45px;
+
+    background-color: rgb(212, 212, 212);
+}
+
+.traffic_label#tl3 {
+    color: rgb(150, 150, 150);
+    position: relative;
+    top: -15px;
+    left: 24px;
+    font-size: 1px;
+}
+
+.tb#tb4 {
+    width: 45px;
+
+    background-color: rgb(192, 192, 192);
+}
+
+.traffic_label#tl4 {
+    color: rgb(150, 150, 150);
+    position: relative;
+    top: -15px;
+    left: 24px;
+    font-size: 1px;
+}
+
+.tb#tb45 {
+    width: 5px;
+
+    background-color: rgb(242, 242, 242);
+}
+
+.tb#tb5 {
+    width: 5px;
+    height: 26px;
+    background-color: rgb(145, 145, 145);
+}
+
+.tb#tb56 {
+    width: 5px;
+
+    background-color: rgb(242, 242, 242);
+}
+
+.tb#tb6 {
+    width: 5px;
+
+    background-color: rgb(145, 145, 145);
+}
+
+#shadow {
+    position: relative;
+    /* z-index: -1; */
+    top: -75px;
+    left: -145px;
+}
+
+.bar {
+    position: relative;
+    top: -205px;
+    left: 180px;
+    width: 150.5px;
+    height: 20.5px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 5px 20px #999999;
+}
+
+.bar > button {
+    position: relative;
+    top: -10px;
+    left: -5px;
+    text-align: center;
+    width: 160.5px;
+    height: 40.5px;
+    background-color: rgb(192, 189, 204);
+    border: 0px solid black;
+    font-size: 16px;
+}
+
+.bar > button > p {
+    position: relative;
+    top: -12px;
+    font-size: 13px;
+}
+
+a {
+    font-size: 12px;
+    position: relative;
+    top: -7px;
+    left: -2px;
+    color: rgb(161, 59, 56);
+    text-decoration: none
+}
+
+.links {
+    position: relative;
+    top: -180px;
+    left: 150px;
+    display: flex;
+}
