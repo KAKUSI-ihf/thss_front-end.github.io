@@ -47,27 +47,27 @@ body {
 
 #greet {
     position: absolute;
-    width: 60%;
+    /*width: 60%;*/
     height: 304px;
-    left: 17%;
+    left: 8.33%;
     background-color: #e64e2e;
     margin: auto;
-    font-size: 50px;
+    font-size: 200%;
     color: white;
     font-weight: lighter;
 }
 
 #smile {
-    font-size: 100px;
-    margin-left: 5%;
+    font-size: 2em;
+    /*margin-left: 5%;*/
 }
 
 #login {
     position: absolute;
-    right:20%;
-    top:30px;
+    right: 8.33%;
+    top: 30px;
     height: 304px;
-    width: 40%;
+    /*width: 40%;*/
     background-color: #f2f2f2;
     box-shadow: 10px 5px 20px #aaa;
 }
@@ -76,4 +76,27 @@ body {
     float: left;
     margin-bottom: 16px;
     width: 100%;
+}
+
+/*small*/
+@media (max-width: 767px) {
+    #greet {
+        left: 0%;
+        font-size: 200%;
+    }
+    #login {
+        right: 0%;
+        /*clear: left;*/
+    }
+}
+
+/*large*/
+@media (min-width: 992px) {
+    #greet {
+        font-size: 300%;
+        left: 16.66%;
+    }
+    #login {
+        right: 16.66%;
+    }
 }
