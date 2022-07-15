@@ -44,7 +44,7 @@ body {
     position: relative;
     /* clear: both; */
     /* width: 100%; */
-    /* height: 496px; */
+    height: 400px;
     /* float: left; */
 }
 
@@ -101,45 +101,43 @@ body {
 .field {
     margin-top: 16px;
 }
-#download {
-    position: absolute;
-    top:400px;
-}
-#systems>li>a {
-    /* position: absolute; */
-    /* bottom: 16px; */
-    /* display: block; */
-    /* padding-top: 36px; */
-    float: left;
-    /* clear: both;  */
-    /* min-width: 34px; */
-    /* height: 16px;
-    color: #FFF;
-    font-size: 13px;
-    font-family: Helvetica, Arial, sans-serif; */
+
+.bottom_content {
+    position: relative;
 }
 
-/*small*/
-@media (max-width: 767px) {
-    #greet {
-        left: 0%;
-        font-size: 200%;
-    }
-
-    #login {
-        right: 0%;
-        /*clear: left;*/
-    }
-
-    #notice_box {
-        left: 0%;
-        width: 41.66%;
-    }
+.bottom_content {
+    font-size: 14px;
 }
+
+#download_zh {
+    font-size: 24px;
+}
+
+#systems {
+    background-color: #808080;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin: 20px 10px 20px 10px;
+    display: inline-block;
+}
+
+/* #other_links li {
+    float: right;
+    padding-left: 36px;
+    background-image: url(../images/bookmark.gif) no-repeat;
+} */
 
 #connect {
-    position: absolute;
-    width: 85%;
+    /* position: absolute; */
+    /* width: 85%; */
     margin: auto;
     height: 46px;
     bottom: 55px;
@@ -181,6 +179,29 @@ body {
     border-width: 48px 48px 0 0;
 }
 
+img {
+    float: left;
+    margin: 5px;
+}
+
+/*small*/
+@media (max-width: 767px) {
+    #greet {
+        left: 0%;
+        font-size: 200%;
+    }
+
+    #login {
+        right: 0%;
+        /*clear: left;*/
+    }
+
+    #notice_box {
+        left: 0%;
+        width: 41.66%;
+    }
+}
+
 /*large*/
 @media (min-width: 992px) {
     #greet {
@@ -188,7 +209,41 @@ body {
         left: 16.66%;
     }
 
+    #notice_box {
+        left: 16.66%;
+    }
+
     #login {
         right: 16.66%;
     }
+
+    #triangle_login {
+        right: 25%;
+    }
+
+    #triangle_greet {
+        left: 25%;
+    }
+
+}
+
+/* xs */
+@media (max-width: 575px) {
+    #greet {
+        display: none;
+    }
+
+    #triangle_login {
+        display: none;
+    }
+
+    #triangle_greet {
+        display: none;
+    }
+
+    #qrcode {
+        /* display: none; */
+        margin-top: 50px;
+    }
+
 }
