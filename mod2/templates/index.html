@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <!-- <head>No title</head> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 
 <body>
@@ -39,15 +39,47 @@
             <div id="greet" class="col-sm-8 col-lg-7">
                 <span id="smile">;)</span>你好,&nbsp;Hi,
             </div>
-            <div id="notice_box" class="col-sm-3"></div>
-            <div id="login" class="col-sm-7 col-lg-5">
-                <div id="field">
+
+            <div id="notice_box" class="col-sm-3">
+                <span id="notice_zh">通知</span> Notification
+            </div>
+            <form method="post" action="{{url_for('login')}}">
+                <div id="login" class="col-sm-7 col-lg-5 container">
+                    <div class="row field">
+                        <div id="user_id" class="col-sm-3">用户名<br>User ID</div>
+                        <input class="col-sm-9" type="text" name="user_id">
+                    </div>
+
+                    <div class="row field">
+                        <div id="password" class="col-sm-3">密码<br>password</div>
+                        <input class="col-sm-9" type="text" name="password">
+                    </div>
+
+                    <!-- <a href="{{url_for('connected')}}">
+                        <div id="connect" class="text-center">
+                            连接<br>Connect
+                        </div>
+                    </a> -->
+                    <!-- <div class="row"> -->
+                        <input type="submit" name="登录" class="col-sm-9">
+                    <!-- </div> -->
                 </div>
-                <div id="field">
-                </div>
+            </form>
+            <div id="triangle_greet"></div>
+            <div id="triangle_login"></div>
+
+            <div id="download">
+                下载客户端
+                <ui id="systems" class="list-inline">
+                    <li><a id="windows" title="Windows">Windows</a></li>
+                    <li><a id="mac" title="MacOS">MacOS</a></li>
+                    <li><a id="linux" title="Linux">Linux</a></li>
+                    <li><a id="android" title="Android">Android</a></li>
+                    <li><a id="ios" title="iOS">iOS</a></li>
+                </ui>
             </div>
         </div>
-        <!-- row -->
+        <!-- row content -->
     </div>
     <!-- container -->
 </body>

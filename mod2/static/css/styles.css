@@ -1,0 +1,194 @@
+body {
+    background-color: #e6e6e6;
+    font-family: "Microsoft YaHei", "SimHei", "Apple LiGothic Medium";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.English {
+    font-size: 20px;
+}
+
+#title,
+#qrcode,
+#attsinghua {
+    height: 100px;
+    width: 100%;
+    padding: 0%;
+    margin-top: 20px;
+}
+
+#title {
+    font-size: 30px;
+    color: #da6046;
+}
+
+#qrcode {
+    background: url('../images/qrcode_for_100.jpg') no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+#touroku {
+    font-size: 14px;
+}
+
+#attsinghua {
+    background: url('../images/attsinghua.png') no-repeat;
+    background-position: center;
+}
+
+.content {
+    position: relative;
+    /* clear: both; */
+    /* width: 100%; */
+    /* height: 496px; */
+    /* float: left; */
+}
+
+#greet {
+    position: absolute;
+    /*width: 60%;*/
+    height: 304px;
+    left: 8.33%;
+    background-color: #e64e2e;
+    margin: auto;
+    font-size: 200%;
+    color: white;
+    font-weight: lighter;
+}
+
+#smile {
+    font-size: 2em;
+    /*margin-left: 5%;*/
+}
+
+#login {
+    position: absolute;
+    right: 8.33%;
+    top: 32px;
+    height: 304px;
+    /*width: 40%;*/
+    background-color: #f2f2f2;
+    box-shadow: 10px 5px 20px #aaa;
+}
+
+.field {
+    float: left;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+#notice_box {
+    position: absolute;
+    height: 160px;
+    left: 8.33%;
+    top: 144px;
+    background-color: #e6562e;
+    color: white;
+    font-weight: lighter;
+    box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+    /* background-color: black; */
+
+}
+
+#notice_zh {
+    font-size: 24px;
+}
+
+.field {
+    margin-top: 16px;
+}
+#download {
+    position: absolute;
+    top:400px;
+}
+#systems>li>a {
+    /* position: absolute; */
+    /* bottom: 16px; */
+    /* display: block; */
+    /* padding-top: 36px; */
+    float: left;
+    /* clear: both;  */
+    /* min-width: 34px; */
+    /* height: 16px;
+    color: #FFF;
+    font-size: 13px;
+    font-family: Helvetica, Arial, sans-serif; */
+}
+
+/*small*/
+@media (max-width: 767px) {
+    #greet {
+        left: 0%;
+        font-size: 200%;
+    }
+
+    #login {
+        right: 0%;
+        /*clear: left;*/
+    }
+
+    #notice_box {
+        left: 0%;
+        width: 41.66%;
+    }
+}
+
+#connect {
+    position: absolute;
+    width: 85%;
+    margin: auto;
+    height: 46px;
+    bottom: 55px;
+    border: #9CB22E solid 1px;
+    background-color: #C0CE55;
+    color: #4a2606;
+}
+
+.corner,
+.triangle_greet,
+.triangle_login,
+.triangle_head {
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#triangle_greet {
+    position: absolute;
+    top: 304px;
+    left: 16.66%;
+    width: 0;
+    height: 0;
+    padding: 0;
+    border-color: #E64E2E transparent;
+    border-style: solid;
+    border-width: 48px 48px 0 0;
+}
+
+#triangle_login {
+    position: absolute;
+    top: 336px;
+    right: 16.66%;
+    width: 0;
+    height: 0;
+    padding: 0;
+    border-color: #F2F2F2 transparent;
+    border-style: solid;
+    border-width: 48px 48px 0 0;
+}
+
+/*large*/
+@media (min-width: 992px) {
+    #greet {
+        font-size: 300%;
+        left: 16.66%;
+    }
+
+    #login {
+        right: 16.66%;
+    }
+}
