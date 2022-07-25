@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <head>No title</head> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 visible-lg"></div>
+            <div class="col-lg-4 col-sm-6">
+                <div id="title" class="pull-left">
+                    <p>清华大学<br>无线校园网</p>
+                    <p class="English">Tsinghua University Wireless Network</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-3">
+                <div id="qrcode"></div>
+                <p class="text-center" id="touroku">欢迎关注“清华大学信息服务”</p>
+            </div>
+            <div class="col-lg-2 col-sm-3">
+                <a href="">
+                    <div id="attsinghua"></div>
+                </a>
+            </div>
+            <div class="col-lg-2 visible-lg"></div>
+        </div>
+        <!--row-->
+    </div>
+    <!--container-->
+
+
+    <div class="container content">
+        <div class="row">
+            <div id="greet" class="col-sm-8 col-lg-7">
+                <span id="smile">;)</span>你好,&nbsp;Hi,
+            </div>
+
+            <div id="notice_box" class="col-sm-3">
+                <span id="notice_zh">通知</span> Notification
+            </div>
+
+            <!-- <form method="post" action="{{url_for('login')}}"> -->
+            <div id="login" class="col-sm-7 col-lg-5 container">
+                <div class="row field">
+                    <div id="user_id" class="col-sm-3">用户名<br>User ID</div>
+                    <input class="col-sm-9" type="text" name="user_id">
+                </div>
+
+                <div class="row field">
+                    <div id="password" class="col-sm-3">密码<br>password</div>
+                    <input class="col-sm-9" type="text" name="password">
+                </div>
+
+                <!-- <input type="submit" name="登录" class="col-sm-12" id="connect"> -->
+                <div class="row field">
+                    <a id="connect" href="connected.html" class="text-center">
+                        连接<br>Connect
+                        
+                    </a>
+                </div>
+
+            </div>
+            <!-- </form> -->
+            <div id="triangle_greet"></div>
+            <div id="triangle_login"></div>
+
+
+        </div>
+        <!-- row content -->
+    </div>
+    <!-- container -->
+
+    <div class="container bottom_content">
+        <div class="row">
+            <div class="col-lg-1 visible-lg"></div>
+            <div id="download" class="col-sm-5 col-lg-4">
+                <p class="text-center"><span id="download_zh">下载客户端</span> Download Client</p>
+                <div id="systems">
+                    <ui>
+                        <li><a id="windows" title="Windows">Windows</a></li>
+                        <li><a id="mac" title="MacOS">MacOS</a></li>
+                        <li><a id="linux" title="Linux">Linux</a></li>
+                        <li><a id="android" title="Android">Android</a></li>
+                        <li><a id="ios" title="iOS">iOS</a></li>
+                    </ui>
+                </div>
+            </div>
+            <!-- download -->
+
+            <div id="other_links" class="col-sm-7">
+                <ul id="links">
+                    <li>
+                        <img src=".images/bookmark.gif">
+                        收藏<br>Bookmark this page
+                    </li>
+                    <li>
+                        <img src=".images/help.gif">
+                        帮助<br>Help
+                    </li>
+                    <li>
+                        <img src="images/contact.gif">
+                        联系<br>Contact
+                    </li>
+                    <li id="tel_and_email">
+                        +86 10-62784859<br>its@tsinghua.edu.cn
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- row -->
+    </div>
+    <!-- container -->
+</body>
+
+</html>

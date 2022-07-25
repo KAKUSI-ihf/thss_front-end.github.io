@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="zh
+">
+
+<head>
+    <meta charset="UTF-8">
+    <title>流量统计</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+</head>
+
+<body onload="autoRenew();">
+
+    <div>
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <script>
+        drawChart();
+        var chartVal = [0, 0, 0, 0, 0, 0, 0, 0]; 
+        var chartLabel = [
+            new Date(2021, 6, 26),
+            new Date(2021, 6, 26),
+            new Date(2021, 6, 26),
+            new Date(2021, 6, 26),
+            new Date(2021, 6, 26),
+            new Date(2021, 6, 26),
+            new Date(2021, 6, 26),
+            new Date(2021, 6, 26),
+        ];
+
+
+
+        getRandom(); 
+        drawChart(); 
+
+
+        var renew = function () {
+            if (myChart) {
+                myChart.destroy();
+            }
+
+            getRandom();
+            drawChart(); 
+        }
+
+        var autoRenew = window.setInterval(renew, 2000);
+
+
+        
+        function getRandom() {
+            for (var i = 0; i < 7; i++) {
+                chartVal[i] = chartVal[i + 1];
+                chartLabel[i] = chartLabel[i + 1];
+            }
+            chartVal[7] += Math.random();
+            oldTime = chartLabel[7];
+            newTime = new Date(
+                2021, 6, 26, 0,
+                oldTime.getMinutes(),
+                oldTime.getSeconds() + 2
+            )
+            chartLabel[7] = newTime;
+        }
+
+        function toHMS(obj) {
+            return obj.getHours() + ':' + obj.getMinutes() + ':' + getSeconds();
+        }
+
+
+        function drawChart() {
+            var ctx = document.getElementById('canvas').getContext('2d');
+            window.myChart = new Chart(ctx, { 
+                type: 'line',
+                data: { 
+                    labels: chartLabel,
+                    datasets: [{
+                        data: chartVal, 
+                        backgroundColor: 'rgb(0, 134, 197, 0.7)', 
+                        borderColor: 'rgba(0, 134, 197, 1)', 
+                        borderWidth: 1, 
+                    }],
+                },
+                options: {
+                    legend: {
+                        display: false, 
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

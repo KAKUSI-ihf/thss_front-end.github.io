@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles_c.css">
+
+</head>
+
+<body>
+    <!-- 橙色三角 -->
+    <div class="triangle_greet"></div>
+
+    <!-- 灰色三角 -->
+    <div class="corner"></div>
+
+    <!-- 橙色盒子 -->
+    <div class="greet">
+        <h1>:P</h1><br>
+        <h2>欢迎，</h2><br>
+        <h3> Welcome,</h3>
+    </div>
+
+    <!-- 灰色盒子 -->
+    <div class="info">
+        <h1 id="user_name">
+            {{current_user.id}}
+            <style>
+            </style>
+        </h1>
+        <p class="info_text" id="Duration">已连接<br>Duration</p>
+        <p id="connect_time">
+            21:06:23
+        </p>
+        <p class="info_text" id="Usage"><br>已用流量<br>Usage</p>
+        <div class="container">
+            <div class="used_bar"></div>
+            <div class="tb" id="tb1">
+                <p id="traffic">
+                    {{current_user.traffic}}
+                </p>
+                <br>
+                <p class="traffic_label" id="tl1">50</p>
+            </div>
+            <div class="tb" id="tb2">
+                <p class="traffic_label" id="tl2">75</p>
+            </div>
+            <div class="tb" id="tb3">
+                <p class="traffic_label" id="tl3">100</p>
+            </div>
+            <div class="tb" id="tb4">
+                <p class="traffic_label" id="tl4">125</p>
+            </div>
+            <div class="tb" id="tb45"></div>
+            <div class="tb" id="tb5"></div>
+            <div class="tb" id="tb56"></div>
+            <div class="tb" id="tb6"></div>
+        </div>
+    </div>
+
+    <!-- 断开连接 -->
+    <a href="index.html">
+        <div class="bar">
+            <button>断开连接
+                <p>Disconnect</p>
+            </button>
+        </div>
+    </a>
+    <!-- 跳转 -->
+    <div class="links">
+        <div class="Info">
+            <img src="images/popup_info.gif" alt="Info">
+            <a href="https://info.tsinghua.edu.cn/" target="_blank">Info</a>
+        </div>
+        <div class="Lib">
+            <img src="images/popup_lib.gif" alt="Lib">
+            <a href="https://lib.tsinghua.edu.cn/" target="_blank">Lib</a>
+        </div>
+        <div class="Learn">
+            <img src="images/popup_learn.gif" alt="Learn">
+            <a href="https://learn.tsinghua.edu.cn/" target="_blank">Learn</a>
+        </div>
+        <div class="Mail">
+            <img src="images/popup_mail.gif" alt="Mail">
+            <a href="https://mails.tsinghua.edu.cn/" target="_blank">Mail</a>
+        </div>
+    </div>
+
+    <a href="chart.html">CHART</a>
+</body>
+
+</html>
